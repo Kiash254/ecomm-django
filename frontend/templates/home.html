@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{%  load static %}
+
+
+{% block content %}
+    <h1>Home</h1>
+    <p>Welcome to the home page</p>
+    <nav class="nav-items">
+        <ul class="nav-bar">
+            <li><a href="">Home</a></li>
+            <li><a href="{% url 'products:product' %}">Products</a></li>
+            <li><a href="{%  url 'shipp:ship' %}">Shipping</a></li>
+            <li><a href="{% url 'cart:cart' %}">Cart</a></li>
+        </ul>
+    </nav>
+{% endblock %}
